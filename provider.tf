@@ -6,10 +6,10 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "roboshop-remote-state-dev-ec2"
-    key    = "roboshop-project"
+    bucket = "shellscript-remote-state"
+    key    = "shell-script-ec2"
     region = "us-east-1"
-    dynamodb_table = "roboshop-locking-dev-ec2"
+    dynamodb_table = "shellscript-locking"
     }
   }
 provider "aws" {
